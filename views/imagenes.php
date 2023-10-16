@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="/subir_imagen.php" method="post" enctype="multipart/form-data">
+    <form action="/views/subir_imagen.php" method="post" enctype="multipart/form-data">
         <label>Upload imag</label>
         <input type="file" name="imagen">
 
