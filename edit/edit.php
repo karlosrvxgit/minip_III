@@ -17,12 +17,13 @@
             <div><img src="/public/perfil/personal1.png" height='30' alt="devch">Xanthe Neal</div><br>
         </div>
     </div>
-
+    
     <div>
         <!-- Botón Back -->
         <button onclick="goBack()">
             < Back</button>
     </div>
+    
     <script>
         function goBack() {
             window.history.back();
@@ -105,8 +106,7 @@
     }
 
     ?>
-
-    <!-- Modal HTML -->
+        <!-- Modal HTML -->
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -121,6 +121,7 @@
             </div>
         </div>
     </div>
+    
 </body>
 <div class="footerend">
     <footer>created by Carlos RV.</footer>
