@@ -101,6 +101,10 @@ label {
   display: flex;
   justify-content: center;
   justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  top: -150px;
+  
 }
 
 footer {
@@ -113,6 +117,8 @@ footer {
   letter-spacing: -0.035em;
   text-align: left;
   color: #828282;
+  
+
 }
 
 .close {
@@ -122,4 +128,29 @@ footer {
     top: -30px;
     left: 150px;
     color: #828282;
+}
+
+.imagen2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 500px;
+  
+}
+
+.imagen3 {
+  margin-right: 50px;
+  font-size: small;
+}
+
+button {
+  color: #2f80ed;
+  font-family: Noto Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.035em;
+  background-color: transparent;
+  border: none;
+  padding: 10px 300px;
+
 }

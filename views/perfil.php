@@ -11,7 +11,10 @@
 <body>
     <div class='imagen2'>
         <div><img src="/imagenes/devchallenges.svg" class="devchallenges" alt="devch"></div><br>
+        <div class="imagen3">
         <div><img src="/public/perfil/personal1.png" height='30' alt="devch">Xanthe Neal</div><br>
+        </div>
+        
     </div>
 
     <span class="spanuno">Personal info</span>
@@ -20,16 +23,15 @@
     <?php
     session_start();
 
-    // Verificar si el usuario está autenticado (es decir, si hay una sesión activa)
+    // Verificar si el usuario está autenticado
     if (isset($_SESSION['user_id'])) {
-        // El usuario está autenticado, puedes continuar mostrando los datos del perfil
 
         // Recupera los datos de la sesión
         $user_id = $_SESSION['user_id'];
         // $user_name = $_SESSION['user_name'];
         $user_email = $_SESSION['user_email'];
 
-        // se obtiene los datos adicionales del usuario desde la base de datos (excepto la contraseña)
+        // se obtiene los datos adicionales del usuario desde la base de datos
         try {
             $hostname = "localhost";
             $username = "root";
@@ -48,7 +50,7 @@
         $result = $stmt->get_result();
 
         if ($result->num_rows === 1) {
-            // Mostrar la información del usuario (excepto la contraseña)
+            // Mostrar la información del usuario
             $row = $result->fetch_assoc();
             $name = $row['name'];
             $bio = $row['bio'];

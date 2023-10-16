@@ -6,16 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Información</title>
     <link rel="stylesheet" type="text/css" href="/edit/stylee.css">
-    <link rel="stylesheet" href="/edit/modal/modal.css"> 
+    <link rel="stylesheet" href="/edit/modal/modal.css">
 </head>
 
 <body>
+
+    <div class='imagen2'>
+        <div><img src="/imagenes/devchallenges.svg" class="devchallenges" alt="devch"></div><br>
+        <div class="imagen3">
+            <div><img src="/public/perfil/personal1.png" height='30' alt="devch">Xanthe Neal</div><br>
+        </div>
+    </div>
+
+    <div>
+            <!-- Botón Back -->
+            <button onclick="goBack()">< Back</button>
+        </div>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
     <?php
     session_start();
 
-    // Verificar si el usuario está autenticado (es decir, si hay una sesión activa)
+    // Verificar si el usuario está autenticado 
     if (isset($_SESSION['user_id'])) {
-        // El usuario está autenticado, puedes continuar con la edición de información
 
         // Recupera los datos de la sesión
         $user_id = $_SESSION['user_id'];
@@ -70,7 +86,7 @@
             echo "<input type='email' placeholder='Enter your password...' name='email' value='$password'><br><br>";
 
             echo "<input class='save' type='submit' value='Save'><br>";
-            echo "<div class='close'><a href='/logout.php'  >Cerrar Sesión</a></div>";
+
             echo "</form>";
         } else {
             echo "No se encontró información del usuario.";
@@ -90,14 +106,17 @@
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>My Profile</h2>
-            <p>mostrar la información del perfil del usuario.</p>
-            <a href="/logout.php">Logout</a>
+            <div class="profilemain">
+                <p class="myprofile">My Profile</p>
+            </div><br><br>
+            <div class="profilemain2">
+                <p class="myprofile">Group Chat</p>
+            </div><br>
+            <div class="profilemain3">
+                <a href="/logout.php">Logout</a>
+            </div>
         </div>
     </div>
-    <!-- Agrega el script para abrir y cerrar el modal -->
-    <script src="modal.js"></script>
-
 </body>
 <div class="footerend">
     <footer>created by Carlos RV.</footer>

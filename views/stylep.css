@@ -147,6 +147,12 @@ height: 80px;
 .imagen2 {
   display: flex;
   justify-content: space-between;
-  gap: 550px;
+  gap: 500px;
+  
+}
+
+.imagen3 {
+  margin-right: 50px;
+  font-size: small;
 }
 
