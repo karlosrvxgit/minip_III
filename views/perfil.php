@@ -12,9 +12,9 @@
     <div class='imagen2'>
         <div><img src="/imagenes/devchallenges.svg" class="devchallenges" alt="devch"></div><br>
         <div class="imagen3">
-        <div><img src="/public/perfil/personal1.png" height='30' alt="devch">Xanthe Neal</div><br>
+            <div><img src="/public/perfil/personal1.png" height='30' alt="devch">Xanthe Neal</div><br>
         </div>
-        
+
     </div>
 
     <span class="spanuno">Personal info</span>
@@ -56,7 +56,7 @@
             $bio = $row['bio'];
             $phone = $row['phone'];
 
-            echo "<div class='editarn' ><button  ><a href='/edit/edit.php' class='edit1' >Editar</a></button></div>";
+            echo "<div class='editarn' ><button  ><a href='/edit/edit.php' class='edit1' >Edit</a></button></div>";
             echo "<p class='profile'>Profile<br><span class='span1'>Some info may be visible to other people
         </span></p>";
             echo "<p>PHOTO: <span class='photo1'><img src='/public/perfil/personal1.png' height='100'> </span> </p>";
@@ -78,6 +78,10 @@
         exit();
     }
     ?>
+    <div class="footerend">
+        <footer>created by Carlos RV.</footer>
+        <footer>devChallenges.io</footer>
+    </div>
 </body>
 
 </html>

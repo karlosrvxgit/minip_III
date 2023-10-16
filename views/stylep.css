@@ -108,18 +108,18 @@ color: #828282;;
 }
 
 .editarn {
-  background-color: rgba(245, 245, 245, 0.628);
+  background-color: transparent;
   border-radius: 10px;
-  /* border: 1px solid #828282; */
   margin-left: 70%;
-  top: 50px;
+  top: 70px;
   position: relative;
   z-index: 1;
 }
 
 .edit1 {
 width: 28px;
-height: 80px;
+height: 100px;
+background-color: transparent;
 }
 
 .passwordinf {
@@ -154,5 +154,30 @@ height: 80px;
 .imagen3 {
   margin-right: 50px;
   font-size: small;
+}
+
+.footerend {
+  display: flex;
+  justify-content: center;
+ 
+  position: relative;
+  z-index: 2;
+  top: 5px;
+  gap: 550px;
+  
+}
+
+footer {
+  width: 133px;
+  height: 19px;
+  font-family: Noto Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: -0.035em;
+  text-align: left;
+  color: #828282;
+  
+
 }
 
