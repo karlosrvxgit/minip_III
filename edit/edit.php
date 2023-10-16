@@ -19,14 +19,15 @@
     </div>
 
     <div>
-            <!-- Botón Back -->
-            <button onclick="goBack()">< Back</button>
-        </div>
-        <script>
-            function goBack() {
-                window.history.back();
-            }
-        </script>
+        <!-- Botón Back -->
+        <button onclick="goBack()">
+            < Back</button>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
     <?php
     session_start();
 
@@ -69,10 +70,13 @@
             echo "<span class='changeinfo' >Change Info</span><br>";
             echo "<span class='changeswill'>Changes will be reflected to every services
             </span><br><br>";
-            echo "<div><img src='/imagenes/worker.svg' width='50px'</div><span class='photo' >CHANGE PHOTO</span><br>";
+            echo "<div style='position: relative; display: inline-block;'>
+            <img src='/public/perfil/personal1.png' height='80px' alt='Perfil'>
+            <div style='position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: transparent; padding: 5px; border-radius: 50%;'>📷</div>
+            </div>
+            <span class='photo'>CHANGE PHOTO</span><br>";
             echo "<label for='name'>Name:</label> <br>";
             echo "<input type='text' placeholder='Enter your name...' name='name' value='$name'><br><br>";
-
             echo "<label for='bio'>Bio:</label><br>";
             echo "<textarea placeholder='Enter your bio...'name='bio' rows='4'>$bio</textarea><br><br>";
 
@@ -96,7 +100,7 @@
         $stmt->close();
         $mysqli->close();
     } else {
-        // Si el usuario no está autenticado, muestra un mensaje de error y un enlace para iniciar sesión
+
         echo "Debes iniciar sesión para editar tu información. <a href='/login/login.php'>Iniciar Sesión</a>";
     }
 

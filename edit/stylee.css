@@ -29,7 +29,7 @@ input {
 
 textarea {
   width: 416.93px;
-  height: 113.41px;
+  height: 90.41px;
   top: 466.06px;
   left: 343.5px;
   border-radius: 12px;
@@ -83,6 +83,7 @@ label {
   width: 131px;
   height: 33px;
   color: #000000;
+  
 }
 
 .changeswill {
@@ -100,10 +101,11 @@ label {
 .footerend {
   display: flex;
   justify-content: center;
-  justify-content: space-between;
+ 
   position: relative;
   z-index: 2;
-  top: -150px;
+  top: -160px;
+  gap: 550px;
   
 }
 
@@ -134,6 +136,7 @@ footer {
   display: flex;
   justify-content: space-between;
   gap: 500px;
+  padding: 20px 20px;
   
 }
 
@@ -151,6 +154,7 @@ button {
   letter-spacing: -0.035em;
   background-color: transparent;
   border: none;
-  padding: 10px 300px;
+  padding: 10px 350px;
+  cursor: pointer;
 
 }
