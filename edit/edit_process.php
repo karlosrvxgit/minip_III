@@ -1,9 +1,8 @@
 <?php
 session_start();
 
-// Verifica si el usuario está autenticado (es decir, si hay una sesión activa)
+// Verifica si el usuario está autenticado 
 if (isset($_SESSION['user_id'])) {
-    // El usuario está autenticado, puedes continuar con la edición de información
 
     // Recupera los datos de la sesión
     $user_id = $_SESSION['user_id'];
@@ -31,7 +30,7 @@ if (isset($_SESSION['user_id'])) {
         // Consulta SQL para actualizar la información del usuario
         $query = "UPDATE users SET name = ?, bio = ?, phone = ? WHERE id = ?";
         $stmt = $mysqli->prepare($query);
-        // $stmt = $db->prepare($query);
+        
         $stmt->bind_param('sssi', $name, $bio, $phone, $user_id);
 
         if ($stmt->execute()) {

@@ -78,8 +78,6 @@
         exit();
     }
     ?>
-    <!-- <a href='/edit/edit.php'>Editar</a> -->
-    <!-- <a href='/logout.php'>Cerrar Sesión</a> -->
 </body>
 
 </html>

@@ -3,16 +3,11 @@ session_start();
 
 // Verifica si se enviaron datos de registro
 if (
-    // isset($_POST['name']) &&
-    // isset($_POST['bio']) &&
-    // isset($_POST['phone']) &&
+    
     isset($_POST['email']) &&
     isset($_POST['password'])
 ) {
     //Recupera los datos del formulario
-    // $name = $_POST['name'];
-    // $bio = $_POST['bio'];
-    // $phone = $_POST['phone'];
     $email = $_POST['email'];
     $password = $_POST['password'];
 
@@ -40,7 +35,7 @@ if (
     if ($stmt->execute()) {
         // Registro exitoso, establece las variables de sesión
         $_SESSION['user_id'] = $mysqli->insert_id;
-        // $_SESSION['user_name'] = $name;
+        
         $_SESSION['user_email'] = $email;
      
 

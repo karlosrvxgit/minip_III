@@ -22,14 +22,14 @@
             <div class="form-group">
                 <label for="form2Example1"></label>
                 <div class="emailr">
-                    <!-- <span class="material-symbols-outlined" id="mail">mail</span> -->
+                    
                     <input type="email" name="email" id="form2Example1" placeholder="Email" required><br>
                 </div>
 
             </div>
 
             <div class="form-group">
-                <!-- <label for="form2Example2">Contraseña:</label> -->
+               
                 <div>
                     <input type="password" name="password" id="form2Example2" placeholder="Password" required><br>
                 </div>
